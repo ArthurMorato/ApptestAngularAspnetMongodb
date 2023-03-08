@@ -2,7 +2,7 @@
 
 This app have this interface:
 
-![alt text](hhttps://ibb.co/fGztMCT)
+https://ibb.co/fGztMCT
 
 Resouces:
 Angular 15, ASP.NET 6, MongoDB 6
