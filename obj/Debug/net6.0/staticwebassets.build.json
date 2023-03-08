@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "EdnJzIEn6cMlDcm2XcTVZTQvmsR+D7g9DsAXj0Q0mkA=",
+  "Source": "vatcalculator",
+  "BasePath": "_content/vatcalculator",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

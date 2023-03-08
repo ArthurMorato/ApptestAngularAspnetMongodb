@@ -1,0 +1,13 @@
+use('vetcalcdb');
+
+// Insert a few documents into the vetcalc collection.
+// db.country.insertMany([
+//   { '_id': 1, 'CountryName': 'France', 'VatValues' : ["5,5","10","20"] },
+//   { '_id': 2, 'CountryName': 'United Kingdom', 'VatValues' : ["5","20"] },
+//   { '_id': 3, 'CountryName': 'Portugal', 'VatValues' : ["6","13","23"] },
+//   { '_id': 4, 'CountryName': 'Spain', 'VatValues' : ["10","21"] },
+  
+// ]);
+
+
+db.country.find();

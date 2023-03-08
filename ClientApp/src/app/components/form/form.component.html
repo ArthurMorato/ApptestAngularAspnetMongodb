@@ -1,0 +1,83 @@
+<div class="container">
+  <form [formGroup]="submitForm" (ngSubmit)="whenSubmitted()" novalidate id="taxForm" class="form-control border border-dark p-4">
+    <div class="row g-0">
+      <div class="col text-center p-2 bg-light">
+        <span class="fs-3">VAT calculator</span>
+      </div>
+    </div>
+    <div class="mb-4">
+      <label class="form-label" for="country">Country</label>
+      <select class="form-select" id="countriesNames" formControlName="country" (change)="onCountrySelect($event)" [(ngModel)]="ngOnInit" name="selectOption">
+        <option selected disabled value="SaC">Select a Country</option>
+        <option *ngFor="let country of countriesNames" [value]="country" >{{ country }}</option>
+      </select>
+      <div class="form-text text-danger" *ngIf="(Country.errors?.['required'] || countries?.length == 0)   && Country.touched">
+        this field is required!
+      </div>
+    </div>
+    <div class="mb-3" >
+      <label class="form-label m-4">VAT</label>
+      <div class="form-check form-check-inline" *ngFor="let vat of selectedCountryVats">
+        <label class="form-check-label" [for]="vat">{{ vat }}%</label>
+        <input class="form-check-input" [id]="vat" type="radio" [value]="vat" name="vat" formControlName="vatValue" (change)="onVatChange($event)" [(ngModel)]="selectedVat"/>
+      </div>
+      <div class="form-text text-danger" *ngIf="Vat.errors?.['required']">
+        this field is required!
+      </div>
+    </div>
+    <div class="row" >
+      <div class="col mb-3">
+        <div class="form-check mt-2 form-check-inline">
+          <input class="form-check-input" [attr.disabled]="true" id="priceWithoutVat" type="radio" value="without"  formControlName="optionval" />
+          <label class="form-check-label" for="priceWithoutVat">Price Without VAT</label>
+        </div>
+        <div class="form-check mt-3 form-check-inline">
+          <input class="form-check-input" [attr.disabled]="true" id="valueAddedTax" type="radio" value="tax"  formControlName="optionval" />
+          <label class="form-check-label" for="valueAddedTax">Value Added Tax</label>
+        </div>
+        <div class="form-check mt-3 form-check-inline">
+          <input class="form-check-input" [attr.disabled]="true" id="priceInclTax" type="radio" value="total"  formControlName="optionval" />
+          <label class="form-check-label" for="priceInclTax">Price Incl. Tax</label>
+        </div>
+        <div class="form-text text-danger">
+          Disabled! <!-- I opted to disable only becouse for my logic, that was desnecessary. But other solution could be "disable the two filds that is opposite of the RADIO BUTTON checked, or vice-versa"-->
+        </div>
+      </div>
+      <div class="col mb-3">
+        <input class="form-control mb-1" onfocus="this.select()" id="priceWithoutVatVal" (input)="onInputValueChange($event)" type="text" formControlName="priceWithoutVatVal" />
+        <div class="form-text text-danger" *ngIf="PriceWithoutVatVal.errors?.['pattern'] && PriceWithoutVatVal.touched">
+          numeric only!
+        </div>
+        <div class="form-text text-danger" *ngIf="PriceWithoutVatVal.errors?.['min'] && PriceWithoutVatVal.touched">
+          invalid value!
+        </div>
+        <div class="form-text text-danger" *ngIf="PriceWithoutVatVal.errors?.['required'] && PriceWithoutVatVal.touched">
+          this field is required!
+        </div>
+        <input class="form-control mb-1" onfocus="this.select()" id="valueAddedTaxVal" (input)="onInputValueChange($event)" type="text" formControlName="valueAddedTaxVal" />
+        <div class="form-text text-danger" *ngIf="ValueAddedTaxVal.errors?.['pattern'] && ValueAddedTaxVal.touched">
+          numeric only!
+        </div>
+        <div class="form-text text-danger" *ngIf="ValueAddedTaxVal.errors?.['min'] && ValueAddedTaxVal.touched">
+          invalid value!
+        </div>
+        <div class="form-text text-danger" *ngIf="ValueAddedTaxVal.errors?.['required'] && ValueAddedTaxVal.touched">
+          this field is required!
+        </div>
+        <input class="form-control mb-1" onfocus="this.select()" id="priceInclTaxVal" (input)="onInputValueChange($event)" type="text" formControlName="priceInclTaxVal" />
+        <div class="form-text text-danger" *ngIf="PriceInclTaxVal.errors?.['pattern'] && PriceInclTaxVal.touched">
+          numeric only!
+        </div>
+        <div class="form-text text-danger" *ngIf="PriceInclTaxVal.errors?.['min'] && PriceInclTaxVal.touched">
+          invalid value!
+        </div>
+        <div class="form-text text-danger" *ngIf="PriceInclTaxVal.errors?.['required'] && PriceInclTaxVal.touched">
+          this field is required!
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 text-center">
+      <button class="w-100 btn btn-lg btn-outline-primary" id="submitButton" type="submit" [disabled]="submitForm.invalid">Submit</button>
+    </div>
+  </form>
+</div>
