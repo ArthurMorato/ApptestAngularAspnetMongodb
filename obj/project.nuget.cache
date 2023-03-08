@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IJOew0MVGLq9DFsQBm2dLl0UxQxMpKixr8hJE2MThKVWMy1j8lp9QVRdpRYibnRWsdkbmD6nN495Sw+k42uwYA==",
+  "dgSpecHash": "Hz8EzjIYyOQmcrIcelxanUf7RxLSPEKnhfhdIw/4YJrOl7WHoUWG3Uer5Uj2MNI9Ha0188JnlK7Vg5ai/+R68w==",
   "success": true,
-  "projectFilePath": "/home/arthurmorato/cods/appTestLocalmedia/vatcalculator/vatcalculator.csproj",
+  "projectFilePath": "/home/arthurmorato/cods/appTestLocalmedia/ApptestAngularAspnetMongodb/vatcalculator.csproj",
   "expectedPackageFiles": [
     "/home/arthurmorato/.nuget/packages/awssdk.core/3.7.100.14/awssdk.core.3.7.100.14.nupkg.sha512",
     "/home/arthurmorato/.nuget/packages/awssdk.securitytoken/3.7.100.14/awssdk.securitytoken.3.7.100.14.nupkg.sha512",

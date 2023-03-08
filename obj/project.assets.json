@@ -969,11 +969,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/arthurmorato/cods/appTestLocalmedia/vatcalculator/vatcalculator.csproj",
+      "projectUniqueName": "/home/arthurmorato/cods/appTestLocalmedia/ApptestAngularAspnetMongodb/vatcalculator.csproj",
       "projectName": "vatcalculator",
-      "projectPath": "/home/arthurmorato/cods/appTestLocalmedia/vatcalculator/vatcalculator.csproj",
+      "projectPath": "/home/arthurmorato/cods/appTestLocalmedia/ApptestAngularAspnetMongodb/vatcalculator.csproj",
       "packagesPath": "/home/arthurmorato/.nuget/packages/",
-      "outputPath": "/home/arthurmorato/cods/appTestLocalmedia/vatcalculator/obj/",
+      "outputPath": "/home/arthurmorato/cods/appTestLocalmedia/ApptestAngularAspnetMongodb/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/arthurmorato/.nuget/NuGet/NuGet.Config"

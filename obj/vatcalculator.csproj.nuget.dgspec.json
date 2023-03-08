@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/arthurmorato/cods/appTestLocalmedia/vatcalculator/vatcalculator.csproj": {}
+    "/home/arthurmorato/cods/appTestLocalmedia/ApptestAngularAspnetMongodb/vatcalculator.csproj": {}
   },
   "projects": {
-    "/home/arthurmorato/cods/appTestLocalmedia/vatcalculator/vatcalculator.csproj": {
+    "/home/arthurmorato/cods/appTestLocalmedia/ApptestAngularAspnetMongodb/vatcalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/arthurmorato/cods/appTestLocalmedia/vatcalculator/vatcalculator.csproj",
+        "projectUniqueName": "/home/arthurmorato/cods/appTestLocalmedia/ApptestAngularAspnetMongodb/vatcalculator.csproj",
         "projectName": "vatcalculator",
-        "projectPath": "/home/arthurmorato/cods/appTestLocalmedia/vatcalculator/vatcalculator.csproj",
+        "projectPath": "/home/arthurmorato/cods/appTestLocalmedia/ApptestAngularAspnetMongodb/vatcalculator.csproj",
         "packagesPath": "/home/arthurmorato/.nuget/packages/",
-        "outputPath": "/home/arthurmorato/cods/appTestLocalmedia/vatcalculator/obj/",
+        "outputPath": "/home/arthurmorato/cods/appTestLocalmedia/ApptestAngularAspnetMongodb/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/arthurmorato/.nuget/NuGet/NuGet.Config"
